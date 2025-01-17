@@ -1,7 +1,7 @@
 import { WeatherData } from "./WeatherData";
 
 const API_KEY: string = "2063f27449d8482596431057251601";
-const BASE_URL: string = "http://api.weatherapi.com/v1/";
+const BASE_URL: string = "https://api.weatherapi.com/v1/";
 
 export async function getWeatherData(location: string): Promise<WeatherData> {
   const days: number = 10;
