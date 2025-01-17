@@ -1,0 +1,9 @@
+.text-outline-blue {
+  --text-shadow-color: #006BBD;
+
+  text-shadow: 
+    -1px 1px 0 var(--text-shadow-color),
+    1px 1px 0 var(--text-shadow-color),
+    1px -1px 0 var(--text-shadow-color),
+    -1px -1px 0 var(--text-shadow-color);
+}

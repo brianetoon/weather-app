@@ -1,6 +1,7 @@
 export interface WeatherData {
   location: {
     name: string; // City name
+    region: string; // Region name
     localtime: string; // Local time in the specified location
   };
 

@@ -1,0 +1,23 @@
+@use "../abstracts/" as *;
+
+.location-form {
+  width: 100%;
+  max-width: 25rem;
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  text-align: center;
+
+  &__input {
+    padding: fluid-size("xs");
+    text-align: center;
+    border-radius: size('8');
+    border: none;
+    // font-size: fs("400");
+    color: clr("neutral", "800");
+
+    &::placeholder {
+      color: clr("neutral", "500");
+    }
+  }
+}

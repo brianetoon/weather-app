@@ -8,13 +8,40 @@
   </head>
   <body>
     <div id="app">
-      <main>
-        <h1>Weather App</h1>
-        <form class="location-form">
-          <label for="location">Enter a location for weather</label>
-          <input type="text" name="location" placeholder="Location name or Zip code">
-        </form>
-      </main>
+
+      <div class="container">
+        <header class="margin-block-start-xl flow fs-500">
+          <h1 class="heading-1 text-center">Weather App</h1>
+          <form class="location-form | flow">
+            <label for="location">
+              Enter a location for weather
+            </label>
+            <input 
+              class="location-form__input"
+              type="text" 
+              name="location" 
+              placeholder="Location or Zip Code"
+            >
+          </form>
+        </header>
+        <main>
+
+          <!-- Current Conditions -->
+           <div id="current-conditions" class="text-center fs-500 margin-block-s fw-bold text-outline-blue">
+            <p id="location-name"></p>
+            <p id="condition"></p> <!-- Icon -->
+            <p id="current-temp" class="fs-900"></p>
+            <p id="feels-like"></p>
+            <p id="high-low-temp"></p>
+           </div>
+
+          <!-- Hourly Forecast -->
+
+          <!-- 10-day Forecast -->
+
+        </main>
+      </div>
+
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>

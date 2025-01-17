@@ -1,9 +1,37 @@
+:root {
+  --clr-neutral-1000: hsl(0, 0%, 0%);
+  --clr-neutral-900: hsl(0, 0%, 7.5%);
+  --clr-neutral-800: hsl(0, 0%, 17.5%);
+  --clr-neutral-700: hsl(0, 0%, 30%);
+  --clr-neutral-600: hsl(0, 0%, 40%);
+  --clr-neutral-500: hsl(0, 0%, 50%);
+  --clr-neutral-400: hsl(0, 0%, 60%);
+  --clr-neutral-300: hsl(0, 0%, 70%);
+  --clr-neutral-200: hsl(0, 0%, 82.5%);
+  --clr-neutral-100: hsl(0, 0%, 95%);
+  --clr-neutral-000: hsl(0, 0%, 100%);
+}
+
 $colors: (
+  // neutral: (
+  //   '900': #212121,
+  //   '400': #5C5C5C,
+  //   '200': #F8F8F8,
+  //   '100': #FFFFFF,
+  // ),
+
   neutral: (
-    '900': #212121,
-    '400': #5C5C5C,
-    '200': #F8F8F8,
-    '100': #FFFFFF,
+    '1000': var(--clr-neutral-1000),
+    '900': var(--clr-neutral-900),
+    '800': var(--clr-neutral-800),
+    '700': var(--clr-neutral-700),
+    '600': var(--clr-neutral-600),
+    '500': var(--clr-neutral-500),
+    '400': var(--clr-neutral-400),
+    '300': var(--clr-neutral-300),
+    '200': var(--clr-neutral-200),
+    '100': var(--clr-neutral-100),
+    '000': var(--clr-neutral-000),
   ),
   primary: (
     '400': #FF6635,

@@ -26,3 +26,11 @@
     @error '$sizes does not have that size!';
   }
 }
+
+@function fluid-size($size) {
+  @if map.has-key($fluid-sizes, $size) {
+    @return map.get($fluid-sizes, $size);
+  } @else {
+    @error '$fluid-sizes does not have that size!';
+  }
+}
