@@ -1,6 +1,6 @@
 import { WeatherData } from "./WeatherData";
 
-const API_KEY: string = import.meta.env.API_KEY;
+const API_KEY: string = import.meta.env.VITE_WEATHER_API_KEY;
 const BASE_URL: string = "https://api.weatherapi.com/v1/";
 
 export async function getWeatherData(location: string): Promise<WeatherData> {

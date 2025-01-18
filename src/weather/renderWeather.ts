@@ -1,14 +1,8 @@
 import { WeatherData } from "./WeatherData";
 
 export function renderWeather(data: WeatherData) {
-  console.log(data);
-
-  // Current Conditions
   renderCurrentConditions(data)
-
-  // Hourly Forecast
   renderHourlyForecast(data);
-
 }
 
 function renderCurrentConditions(data: WeatherData) {
@@ -20,11 +14,14 @@ function renderCurrentConditions(data: WeatherData) {
   const todayHigh = data.forecast.forecastday[0].day.maxtemp_f;
   const todayLow = data.forecast.forecastday[0].day.mintemp_f;
 
+  const conditionIcon = document.getElementById("condition-icon") as HTMLImageElement;
+  conditionIcon.src = `https:${data.current.condition.icon}`;
+
   document.getElementById("location-name")!.textContent = `${cityName}, ${regionName}`;
   document.getElementById("condition")!.textContent = condition;
   document.getElementById("current-temp")!.textContent = `${currentTemp}°F`;
-  document.getElementById("feels-like")!.textContent = `Feels Like ${feelsLike}°`;
-  document.getElementById("high-low-temp")!.textContent = `High ${todayHigh}° - Low ${todayLow}°`;
+  document.getElementById("feels-like")!.textContent = `Feels Like ${feelsLike}°F`;
+  document.getElementById("high-low-temp")!.textContent = `High ${todayHigh}°F - Low ${todayLow}°F`;
 }
 
 function renderHourlyForecast(data: WeatherData) {
