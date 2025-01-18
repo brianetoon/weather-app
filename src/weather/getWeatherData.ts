@@ -1,6 +1,6 @@
 import { WeatherData } from "./WeatherData";
 
-const API_KEY: string = "2063f27449d8482596431057251601";
+const API_KEY: string = import.meta.env.API_KEY;
 const BASE_URL: string = "https://api.weatherapi.com/v1/";
 
 export async function getWeatherData(location: string): Promise<WeatherData> {
