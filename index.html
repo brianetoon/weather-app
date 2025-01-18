@@ -7,15 +7,13 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div id="app">
+    <div id="app" class="padding-block-xl">
 
       <div class="container">
-        <header class="padding-block-start-xl flow fs-500">
+        <header class="flow fs-500">
           <h1 class="heading-1 text-center">Weather App</h1>
           <form class="location-form | flow">
-            <label>
-              Enter a location for weather
-            </label>
+            <label>Enter a location for weather</label>
             <input 
               class="location-form__input"
               type="text" 
@@ -24,10 +22,11 @@
             >
           </form>
         </header>
+
         <main>
 
           <!-- Current Conditions -->
-           <div id="current-conditions" class="text-center fs-500 margin-block-s fw-bold text-outline-blue">
+           <div id="current-conditions" class="text-center fs-500 margin-block-l fw-bold text-outline-blue">
             <p id="location-name"></p>
             <p id="condition"></p> <!-- Icon -->
             <p id="current-temp" class="fs-900"></p>
@@ -36,6 +35,10 @@
            </div>
 
           <!-- Hourly Forecast -->
+          <div id="hourly-forecast" class="forecast margin-block-l flow visually-hidden">
+            <h2 class="fs-500">Hourly Forecast</h2>
+            <div id="hourly-forecast-data" class="forecast__cards"></div>
+          </div>
 
           <!-- 10-day Forecast -->
 

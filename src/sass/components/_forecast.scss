@@ -1,0 +1,25 @@
+@use "../abstracts" as *;
+
+.forecast {
+  border-radius: size("8");
+  padding: fluid-size("s") fluid-size("m");
+  background-color: clr(neutral, "800");
+  opacity: 0.8;
+
+  &__cards {
+    display: flex;
+    gap: fluid-size("2xs");
+    overflow: scroll;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: fs("300");
+    border-radius: size("8");
+    padding: fluid-size("2xs") fluid-size("xs");
+    text-align: center;
+    background-color:clr(neutral, "900");
+  }
+}

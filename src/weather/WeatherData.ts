@@ -38,6 +38,17 @@ export interface WeatherData {
         maxtemp_f: number; // Maximum temperature in Fahrenheit
         mintemp_f: number; // Minimum temperature in Fahrenheit
       };
+      hour: Array<{
+        time: string; // Time of the forecast hour (e.g., "2025-01-17 13:00")
+        temp_f: number; // Temperature in Fahrenheit
+        condition: {
+          text: string; // Weather condition (e.g., "Partly cloudy")
+          icon: string; // Icon URL for the condition
+          code: number; // Condition code
+        };
+        chance_of_rain: number; // Chance of rain (%)
+        chance_of_snow: number; // Chance of snow (%)
+      }>;
     }>;
   };
 }

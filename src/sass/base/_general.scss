@@ -1,15 +1,26 @@
 @use "../abstracts/" as *;
 
+:root {
+  --vh: 1vh;
+}
+
+@supports (height: 100dvh) {
+  :root {
+    --vh: 1dvh; 
+  }
+}
+
 body {
   font-family: $ff-base;
   font-weight: $fw-400;
   font-size: fs('400');
   color: clr(neutral, '000');
-  line-height: 1.4;
-  height: 100vh;
+  line-height: 1.5;
+  height: calc(var(--vh) * 100);
+  min-height: fit-content;
 
-  background-image: url('/images/day-sky.webp');
   // background-image: url('/images/night-sky.jpg');
+  background-image: url('/images/day-sky.webp');
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat; 

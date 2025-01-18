@@ -10,5 +10,3 @@
 - Create an engaging user experience through the use of HTML and CSS.
 - Commit frequently to the git repository (minimum of 10 commits).
 - Include a README file that contains a description of your application.
-
-- Extra Challenge: Auto-complete city names (may be API available)
