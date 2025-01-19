@@ -5,8 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="/weather-app/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <script type="module" crossorigin src="/weather-app/assets/index-Du7_NONo.js"></script>
-    <link rel="stylesheet" crossorigin href="/weather-app/assets/index-CTABYWI9.css">
+    <script type="module" crossorigin src="/weather-app/assets/index-Dfs3eFog.js"></script>
+    <link rel="stylesheet" crossorigin href="/weather-app/assets/index-zXHQPzKt.css">
   </head>
   <body>
     <div id="app" class="padding-block-xl">
@@ -14,21 +14,20 @@
       <div class="container">
         <header class="flow fs-500">
           <h1 class="heading-1 text-center">Weather App</h1>
-          <form class="location-form | flow">
-            <label>Enter a location for weather</label>
+          <form class="location-form | margin-block-start-m">
             <input 
               class="location-form__input"
               type="text" 
               name="location" 
-              placeholder="Location or Zip Code"
+              placeholder="Enter Location or Zip Code"
             >
           </form>
         </header>
 
-        <main>
+        <main class="flow">
 
           <!-- Current Conditions -->
-           <div id="current-conditions" class="text-center fs-500 margin-block-l fw-bold text-outline-blue">
+           <div id="current-conditions" class="text-center fs-500 fw-bold margin-block-m">
             <p id="location-name"></p>
             <p id="current-temp" class="fs-900"></p>
             <img id="condition-icon" class="mx-auto" src="">
@@ -38,12 +37,16 @@
            </div>
 
           <!-- Hourly Forecast -->
-          <div id="hourly-forecast" class="forecast margin-block-l flow visually-hidden">
+          <div id="hourly-forecast" class="forecast flow visually-hidden">
             <h2 class="fs-500">Hourly Forecast</h2>
             <div id="hourly-forecast-data" class="forecast__cards"></div>
           </div>
 
           <!-- 10-day Forecast -->
+          <div id="daily-forecast" class="forecast flow visually-hidden">
+            <h2 class="fs-500">Daily Forecast</h2>
+            <div id="daily-forecast-data" class="forecast__cards"></div>
+          </div>
 
         </main>
       </div>
